@@ -5,33 +5,35 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<header class="header nav-down">
+		<div class="header__logo"><img src="img/logo.png" alt=""></div>
+				
+		<div class="header__toggler">
+			<input type="checkbox" id="burger">
+			<label for="burger" class="header__spinner">
+				<span class="spinner"></span>
+				<span class="spinner"></span>
+				<span class="spinner"></span>
+			</label>
+		</div>
+		<nav class="header__nav">
+			<ul>
+				<li><a href="#company">про компанию</a></li>
+				<li><a href="#produce">наше производство</a></li>
+				<li><a href="#security">безопасность продукции</a></li>
+			</ul>
+			<span><img src="img/close.svg" alt=""></span>
+		</nav>
+			
+	</header>
 	<section class="section" id="company">
 		<div class="container">
-			<header class="header">
-				<div class="header__logo"><img src="img/logo.png" alt=""></div>
-				
-					<div class="header__toggler">
-						<input type="checkbox" id="burger">
-						<label for="burger" class="header__spinner">
-							<span class="spinner"></span>
-							<span class="spinner"></span>
-							<span class="spinner"></span>
-						</label>
-					</div>
-					<nav class="header__nav">
-					<ul>
-						<li><a href="#company">про компанию</a></li>
-						<li><a href="#produce">наше производство</a></li>
-						<li><a href="#security">безопасность продукции</a></li>
-					</ul>
-					<span><img src="img/close.svg" alt=""></span>
-					</nav>
 			
-			</header>
-	<div class="title-wrap"><h2 class="section__title">Про компанію</h2></div>
+	<div class="title-wrap"><h1 class="section__title">Про компанію</h1></div>
 		<div class="section__img">
 			<div class="section__border">
 				<p class="section__border__title">Еко- бренд SUN FOODS ™ — торгова марка сучасної інноваційної української компанії “СІНТЕКС”, яка спеціалізується на виробництві 100 % натуральних продуктах харчування</p>
@@ -85,7 +87,7 @@
 
 		<div class="eco eco--gray"><p class="info__wrap_text info__wrap_text--blacklg">В перерасчёте через восстановление, особенно в зимний период, цена сушеной продукции заметно выигрывает в сравнении с свежей из парников, и явно качественнее и более полезная для здорового питания и пополнения необходимых витаминных запасов в сравнении с продукцией на гидропонике</p></div>
 		</div>
-		</div>
+	</section>
 		<section class="section" id="security">
 			<div class="container">
 			<div class="title-wrap">
@@ -131,11 +133,11 @@
 			<button class="footer__btn">Підписатися</button>
 		</div>
 		<div class="footer__tell">
-			<span>+38 (0552) 42-42-84</span>
-			<span>+38 (0552) 42-42-94</span>
+			<span><a href="tel:+38(0522)42-42-84">+38 (0552) 42-42-84</a></span>
+			<span><a href="tel:+38(0552)42-42-94">+38 (0552) 42-42-94</a></span>
 		</div>
 		<div class="footer__url">
-			<span>sintex@ukr.net</span>
+			<span><a href="mailto:sintex@ukr.net">sintex@ukr.net</a></span>
 		</div>
 		<div class="footer__contact">
 			<span>Компанія "СІТ-релайн"</span>
@@ -144,7 +146,7 @@
 		</div>
 		<div class="footer__copyright">
 			<span class="footer__link footer__link--lg">© 2017 SUN FOODS Всі права захищені</span>
-			<span class="footer__link">Адаптивні сайти від <span class="footer__link--green">makebecool</span></span>
+			<span class="footer__link">Адаптивні сайти від <a href="https://makebecool.com/" class="footer__link--green">makebecool</a></span>
 		</div>
 		</div>
 		</div>
@@ -152,6 +154,7 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
-	<script src="js/script.js"></script>	
+	<script src="js/script.js"></script>
+
 </body>
 </html>
